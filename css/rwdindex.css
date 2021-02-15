@@ -1,4 +1,23 @@
+@media screen and (max-width:1100px) {
+
+    #header .nav .depth1 > li > a { 
+        display:block; padding:30px 30px;
+        font-size:17px; text-align:center;
+        font-weight:bold
+    }
+
+
+
+/* 마지막 괄호     */
+}
+
+
+
+
+
+
 @media screen and (max-width:1024px) {
+#header h1 { padding:20px 0; margin-left:30px }
 
 #header .open 
 {display: block;
@@ -63,10 +82,122 @@ padding: 10px 0px 20px; }
     transition:all 0.5s;
    
 }
+#header .nav .depth1 > li.on .depth2 {
+    height: auto;
+}
 #header .nav .depth2 > li > a { 
     display:block; padding:13px 30px; font-weight:bold; 
 }
 
+/* 슬릭 슬라이드 */
+/* 동그라미 버튼 애니메이션 */
+.article1 .slide_group .slick-dots li { display: inline-block; margin: 0 5px;
+    width: auto; height: auto; background: none;
+    position: relative; bottom: 20px;}
+    .article1 .slide_group .slick-dots li button
+    {width: 20px;height: 20px; border-radius: 50%;
+        background:rgb(29, 146, 241); border: none;
+    color: transparent; outline: none;
+    position: static; top: 0; left: 0;}
+    .article1 .slide_group .slick-dots li.slick-active button 
+    {animation: none 3s both;
+    background: #00f;}
+
+    
+/* 슬라이드 자동재생/멈충 버튼 */
+.article1 {position: relative;}
+.article1 .playstop {position: absolute; bottom: 0;left: 50%;
+    transform: translate(70px) scale(1.4); bottom: 22px;
+color: #fff; background: none; border: none;}
+
+
+/* COMPANY INTRODUCE 구역 */
+.article2 ul li {
+    float:left;
+    width:50%;
+    text-align:center; 
+    margin-right:0%;
+    margin-top:60px; 
+}
+
+
+/* BUSINESS INDUSTRY 구역 */
+.article3 .txtbox p:nth-child(2)
+{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    background:#397dda;
+    padding-top:20px;
+    min-height: 150px;
+}
+#section .comment span { display: block;
+}
+#section .comment span.hide { display: none;
+}
+/* footer 구역 */
+
+#footer p:nth-child(2) span {display: block;}
+#footer p:nth-child(2) span.hide {
+    display: none;
+}
+
+
+
 
 /* 마지막괄호 */
 } 
+
+@media screen and (max-width:500px) {
+
+    .article1 .slide_group  .slide  .txt h2 { 
+        font-size:30px; font-weight:bold; 
+        text-shadow:0px 0px 4px #555;
+        margin-bottom:25px;
+    }
+
+    /* COMPANY INTRODUCE 구역 */
+.article2 ul li {
+    float:left;
+    width:100%;
+    text-align:center; 
+    margin-right:0%;
+    margin-top:60px; 
+}
+
+
+/* BUSINESS INDUSTRY 구역 */
+
+.article3 ul li {
+    float:left; width:100%;
+    margin-right:0%;
+    margin-top:60px;
+    text-align:center; 
+}    
+
+.article3 .imgbox img {
+    transition:all 0.5s;
+    width: 100%;
+} 
+.article3 .txtbox p:nth-child(2)
+{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    background:#397dda;
+    padding-top:20px;
+    min-height: auto
+}
+/* footer 구역 */
+#footer {background: #303030; padding: 0px 0 15px;
+    text-align: center; color: #8d8b8b; font-size: 12px;}
+    #footer .row {padding: 0;}
+#footer p:nth-child(1) a { font-weight: bold; display:block;
+    font-size: 13px; color: #fff; padding: 15px 0px 15px 0px;
+    background: #397dda; border-top: 1px solid #fff;
+}
+
+    /* 마지막 괄호 */
+}
+
+
